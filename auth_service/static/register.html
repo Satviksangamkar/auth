@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/6d0b0e6586.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Account</h1>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="8" required />
+        <i class="fa fa-eye toggle-password"></i>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required />
+        <i class="fa fa-eye toggle-password"></i>
+      </div>
+      <button type="submit">Create account</button>
+    </form>
+    <p style="margin-top:1rem; font-size:0.9rem;">
+      Already have an account? <a href="login.html">Log In</a>
+    </p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

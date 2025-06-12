@@ -1,0 +1,118 @@
+/* ─── 1. Use border-box everywhere ─────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─── 2. Base page styles ─────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #0d1b2a, #1b263b);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ─── 3. Card container ───────────────────────────── */
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 360px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* ─── 4. Gradient headings ────────────────────────── */
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(
+    90deg,
+    #fbc531,
+    #e84118,
+    #8c7ae6,
+    #00a8ff,
+    #4cd137
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+/* ─── 5. Form groups & inputs ─────────────────────── */
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid #4cd137;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ─── 6. Eye-toggle icon (always white) ─────────── */
+.form-group .toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff !important;           /* force white */
+  font-size: 1.1rem;
+}
+
+.form-group .toggle-password:hover {
+  color: #fff !important;
+}
+
+/* ─── 7. Buttons ─────────────────────────────────── */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #00a8ff, #4cd137);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ─── 8. Links & errors ───────────────────────────── */
+a {
+  color: #00a8ff;
+  text-decoration: none;
+}
+
+.error-text {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
