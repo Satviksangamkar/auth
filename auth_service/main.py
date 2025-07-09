@@ -12,6 +12,7 @@ from passlib.context import CryptContext
 from jose import jwt
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 
+
 # Load environment variables
 load_dotenv()
 BASE_URL = os.getenv("BASE_URL")
