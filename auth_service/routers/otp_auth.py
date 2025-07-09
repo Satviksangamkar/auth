@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, EmailStr
 import random
 
+
 # ⬇️  relative imports
 from ..email_utils import send_email_otp
 from ..redis_client import r
